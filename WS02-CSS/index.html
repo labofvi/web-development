@@ -25,6 +25,49 @@
   background-color: #f0f0f0;
   border: 1px solid #ccc;
 }
+table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #f2f2f2;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    label {
+      font-weight: bold;
+    }
+    
+    input[type="text"], input[type="email"] {
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
     </style>
 
     <link rel="stylesheet" href="styles.css">
@@ -61,7 +104,7 @@
     </tr>
     <tr>
         <td>Data Networks</td>
-        <td>Completed</td>
+        <td style="color: green;">Completed</td>
     </tr>
 </table>
 
