@@ -92,9 +92,33 @@ table {
       }
 
 .pseudo-list li:nth-child(odd) {
-        background-color: lightgray;
+        background-color: rgb(94, 94, 94);
       }
       
       .pseudo-list li:nth-child(even) {
-        background-color: white;
+        background-color: rgb(71, 71, 71);
+      }
+
+.filter-image {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+      }
+      
+      .filter-image:hover {
+        filter: grayscale(0%);
+      }
+
+.quote {
+        position: relative;
+        padding-left: 20px;
+        font-style: italic;
+      }
+      
+      .quote::before {
+        content: '“';
+        font-size: 40px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: rgb(255, 255, 255);
       }
