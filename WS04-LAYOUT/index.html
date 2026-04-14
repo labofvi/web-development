@@ -1,86 +1,55 @@
 <!DOCTYPE html>
     <html lang="en">
     <head>
-        <title>My Vi's HTML Page</title>
+        <title>A Page By Vi</title>
+      <link rel="stylesheet" href="styles.css">
     </head>
-    <style>
-    h1 {
-      color: green;
-    }
-    p {
-      color: blue;
-    }
-    
-    body {
-      background-color: lightgray;
-    }
-    
-    h1 {
-      font-size: 2em;
-    }
-    .content-box {
-  padding: 30px;
-  margin: 15px;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-}
-table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    
-    th, td {
-      border: 1px solid #ddd;
-      padding: 8px;
-      text-align: left;
-    }
-    
-    th {
-      background-color: #f2f2f2;
-    }
-    
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    
-    label {
-      font-weight: bold;
-    }
-    
-    input[type="text"], input[type="email"] {
-      padding: 8px;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-    }
-    
-    input[type="submit"] {
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    
-    input[type="submit"]:hover {
-      background-color: #45a049;
-    }
-    </style>
-
-    <link rel="stylesheet" href="styles.css">
-
+<header>
+  <h1 style="color: darkred;">Vi's Lab: HTML Edition</h1>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+</header>
     <body>
         <h1>This page is for my course about web development!</h1>
         <p>I am surprised if this works.</p>
 
-        <img src="./Untitled6.jpg" alt="I don't have pictures of myself in my PC">
+        <img src="./Untitled6.jpg" alt="Self Portrait" class="filter-image">
+
+    <div class="animation-box"></div>
+
+<blockquote class="quote">
+        "I like the way the block moves" - Philosopher Sera.
+      </blockquote>
 
     <div class="content-box">
-        <h3>Content Box Test</h3>
-         <p>This is a div element.</p>
+  <h3>Shopping list</h3>
+  <p>I forgot to make the shopping list. And go to the store.</p>
     </div>
+    <button class="transition-button">Hover me</button>
+
+<br><br>
+
+<main>
+  <section id="about">
+    <h2>Easter egg</h2>
+    <p style="color: blanchedalmond;">I like doing stuff.</p>
+  </section>
+</main>
+<br><br>
+
+
+  <ul class="pseudo-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+      </ul>
 
   <h2 style="color: red;">My hobbies</h2>
   <ol>
@@ -90,7 +59,9 @@ table {
     </ol>
  
  
-<a href="https://www.youtube.com">Visit YouTube</a>
+<a href="https://www.youtube.com/@ironlakearts">Visit YouTube</a>
+
+<br><br>
 
 <h2>Ongoing Courses</h2>
 
@@ -109,6 +80,31 @@ table {
     </tr>
 </table>
 
+<h2>Guess what my favourite animal is</h2>
+
+<div class="grid-container">
+  <div class="grid-item">Duck</div>
+  <div class="grid-item">Dog</div>
+  <div class="grid-item">Cat</div>
+  <div class="grid-item">Gorilla</div>
+  <div class="grid-item">Pidgeon</div>
+  <div class="grid-item">Snake</div>
+</div>
+
+<br><br>
+
+<div class="responsive-box">Resize the window to see the effect</div>
+
+<br><br>
+
+<div class="flex-container">
+  <div class="box">Box 1</div>
+  <div class="box">Box 2</div>
+  <div class="box">Box 3</div>
+</div>
+
+<br><br>
+
 <h2>Contact if you want to hire me to a really well paying job</h2>
 
 <form>
@@ -121,6 +117,8 @@ table {
     <input type="submit" value="Submit">
 </form>
 
-   	
+<footer>
+  <p style="color: black;">Copyright 2026</p>
+</footer>   	
     </body>
     </html>
