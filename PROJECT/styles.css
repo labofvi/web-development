@@ -1,0 +1,20 @@
+/* This is a CSS comment */
+/* Body in black color */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Staatliches', sans-serif;
+    background-color: #000000;}
+/* All text in white */
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Staatliches', sans-serif;
+  text-align: center;
+}
+/* Centers */
+.container {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
