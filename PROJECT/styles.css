@@ -14,7 +14,7 @@ body {
 }
 /* Keskitetty, koko sivu */
 .container {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   text-align: center;
 }
@@ -41,4 +41,74 @@ body {
 .kuva1 img:hover {
   filter: grayscale(0%);
 }
-
+/* Fit to screen-efekti teksteille */
+h2 {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+}
+/* Yhteystiedot ja sosiaalinen media */
+.contact-box {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 40px auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+.contact-box a {
+  color: hsl(7, 100%, 50%);
+  text-decoration: none;
+}
+.contact-box a:hover {
+  text-decoration: underline;
+}
+/* Contact us formi, jolla saa suoraa lähetettyä viestin */
+.contact-box {
+  background: #111;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 450px;
+  margin: 50px auto;
+  color: #eee;
+  box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+.contact-box form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-box input,
+.contact-box textarea {
+  background: #222;
+  border: 1px solid #444;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  color: #fff;
+}
+.contact-box button {
+  background: hsl(7, 100%, 50%);
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.contact-box button:hover {
+  background: hsl(7, 100%, 51%);
+}
+/* Floating "Contact Us" painike - sika magee */
+.floating-contact {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: hsl(7, 100%, 50%);
+  padding: 12px 18px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  z-index: 9999; /* Varmistaa, että painike on aina päällimmäisenä */
+}
+.floating-contact a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}

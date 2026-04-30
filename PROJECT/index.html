@@ -14,20 +14,36 @@
 
 </head>
 <body>
-<!-- Top image, logo and welcome message -->
+<!-- Top kuva, logo -->
     <img src="./iron_lake_arts_logo 2022.png" alt="Logo" width="400" class="filter-image">
+
  <!-- About Section, a divider -->
   <div class="section">
   <h2>About us</h2>
-  <p>We make films, videos and visual arts.</p>
-  <p>contact@ironlakearts.com</p>
+  <p>We make films, videos and visual arts. Human-made.</p>
+  </div>
+
+<br><br>
+
+  <div class="section">
+  <h2 style="color: rgb(252, 6, 6);">TBA: A banner video here </style></h2>
+  </div>
+
+<!-- Leijuva "Contact Us" painike -->
+<div class="floating-contact">
+  <a href="mailto:contact@ironlakearts.com">Contact Us</a>
 </div>
 
 <br><br>
+
 <!-- Portfolio osuus ja kuva, nimi ja projektin lyhyt kuvaus -->
   <div class="section">
   <h2>Our Portfolio</h2>
-  <p>Completed works</p>
+
+  <details> <!-- Pienentää kontentin lokeroihin, siistimpi -->
+  <summary>Completed works</summary>
+  <p>Projects published.</p>
+
   <div class="container">
   <div class="kuva1">
     <img src="/PROJECT/Who is behind the door Thumbnail.jpg" alt="Image" />
@@ -37,9 +53,19 @@
      "Who is behind the door" a Short Micro Film (2026)
     </p>
   </div>
+  </details>
+
+
 </div>
+
   <br><br>
-  <p>To be announced</p>
+
+  <details> <!-- Pienentää kontentin lokeroihin, siistimpi -->
+  <summary>To be announced</summary>
+  <p>Projects on the works.</p>
+
+
+
   <div class="container">
   <div class="kuva1">
     <img src="/PROJECT/Title Card +-0.jpg" alt="Image" />
@@ -49,6 +75,9 @@
      "+-0" a counting game
     </p>
   </div>
+
+  <br><br>
+
   <div class="container">
   <div class="kuva1">
     <img src="/PROJECT/Dark Room v2 (vertical).jpg" alt="Image" />
@@ -58,6 +87,9 @@
      "Dark Room" a mixed media project
     </p>
   </div>
+
+  <br><br>
+
   <div class="container">
   <div class="kuva1">
     <img src="/PROJECT/t4.jpg" alt="Image" />
@@ -71,11 +103,39 @@
      "Iron Lake Arts x" collaboration video series
     </p>
   </div>
+  </details>
+
 </div>
 
 <br><br>
 <br><br>
 <br><br>
+<!-- Yhteystiedot ja sosiaalinen media -->
+<div class="contact-box">
+  <h2>Socials</h2>
+  <p>Email: <a href="mailto:contact@ironlakearts.com">contact@ironlakearts.com</a></p>
+  <p>Instagram: @ironlakearts</p>
+  <p>Youtube: @ironlakearts</p>
+  <p>Looking for sponsors and partnerships.</p>
+</div>
+
+<div class="contact-box">
+  <h2>Contact Us</h2>
+  <form>
+    <label>Name</label>
+    <input type="text" placeholder="Your name">
+
+    <label>Email</label>
+    <input type="email" placeholder="Your email">
+
+    <label>Message</label>
+    <textarea placeholder="Write your message"></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+</div>
+
+
 <br><br>
 <!-- Footer, alaosa pieni logo ja copyright teksti-->
 <footer>
