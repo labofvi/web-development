@@ -1,20 +1,44 @@
 /* This is a CSS comment */
-/* Body in black color */
+/* Tausta (body) musta */
 html, body {
     margin: 0;
     padding: 0;
     font-family: 'Staatliches', sans-serif;
     background-color: #000000;}
-/* All text in white */
+/* Kaikki teksti valkoisena, ja haluamallani fontilla */
 body {
   background-color: black;
   color: white;
   font-family: 'Staatliches', sans-serif;
   text-align: center;
 }
-/* Centers */
+/* Keskitetty, koko sivu */
 .container {
   width: 60%;
   margin: 0 auto;
   text-align: center;
 }
+/* Mittasuhteet pikkukuville Portfolio osuudessa */
+.kuva1 img {
+  max-width: 100%;     
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+/* Flexbox portfolio kuville - Kuva pysyy samana eri ikkunoissa */
+.kuva1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+/* Hover-efekti kuville Portfolio osuudessa ja Grayscale-efekti */
+.kuva1 img {
+  filter: grayscale(100%);
+  transition: 0.3s ease;
+}
+.kuva1 img:hover {
+  filter: grayscale(0%);
+}
+
